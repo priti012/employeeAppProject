@@ -44,7 +44,7 @@ export class AddEmployeeComponent implements OnInit {
       if (!this.addEmployee.name || !this.addEmployee.phone.toString().match(/[0-9]/)) {
         return;
       }
-      const newEmployee: Employee = {employee} as Employee;
+      const newEmployee: Employee = employee;
       this.apiServiceService
       .addEmployee(newEmployee)
       .subscribe((employees) => {
