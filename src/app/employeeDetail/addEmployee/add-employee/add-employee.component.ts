@@ -48,7 +48,7 @@ export class AddEmployeeComponent implements OnInit {
       this.apiServiceService
       .addEmployee(newEmployee)
       .subscribe((employees) => {
-        this.apiServiceService.employees.push(employees.employee);
+        this.apiServiceService.employees.push(employees);
       });
     }
 
